@@ -43,6 +43,9 @@ exports[`GameScreen component render correctly with type GameType.ARTIST 1`] = `
     </svg>
     <div
       className="game__mistakes"
+    />
+    <div
+      className="game__mistakes"
     >
       <div
         className="wrong"
@@ -102,6 +105,19 @@ exports[`GameScreen component render correctly with type GameType.GENRE 1`] = `
         }
       />
     </svg>
+    <div
+      className="game__mistakes"
+    >
+      <div
+        className="wrong"
+      />
+      <div
+        className="wrong"
+      />
+      <div
+        className="wrong"
+      />
+    </div>
     <div
       className="game__mistakes"
     >
