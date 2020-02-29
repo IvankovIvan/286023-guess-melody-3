@@ -12,8 +12,13 @@ it(`Should WelcomeScreen render correctly`, () => {
   const {song} = mock;
   const tree = renderer
     .create(
-        <AudioPlayer isPlaying={false} onPlayButtonClick={() => {}}
-          src={song.src}/>, {
+        <AudioPlayer
+          isPlaying={false}
+          isLoading={true}
+          onPlayButtonClick={() => {}}
+          src={song.src}>
+          <audio/>
+        </AudioPlayer>, {
           createNodeMock: () => {
             return {};
           }})
