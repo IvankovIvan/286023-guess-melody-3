@@ -172,6 +172,40 @@ exports[`Render App Render ArtistQuestionScreen 1`] = `
 </section>
 `;
 
+exports[`Render App Render GameOverScreen 1`] = `
+<section
+  className="result"
+>
+  <div
+    className="result__logo"
+  >
+    <img
+      alt="Угадай мелодию"
+      height="83"
+      src="img/melody-logo.png"
+      width="186"
+    />
+  </div>
+  <h2
+    className="result__title"
+  >
+    Какая жалость!
+  </h2>
+  <p
+    className="result__total result__total--fail"
+  >
+    У вас закончились все попытки. Ничего, повезёт в следующий раз!
+  </p>
+  <button
+    className="replay"
+    onClick={[Function]}
+    type="button"
+  >
+    Попробовать ещё раз
+  </button>
+</section>
+`;
+
 exports[`Render App Render GenreQuestionScreen 1`] = `
 <section
   className="game game--genre"
@@ -269,23 +303,38 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
           <audio />
         </div>
         <div
-          className="game__answer"
+          className="track"
         >
-          <input
-            checked={false}
-            className="game__input visually-hidden"
-            id="answer-0"
-            name="answer"
-            onChange={[Function]}
-            type="checkbox"
-            value="answer-0"
+          <button
+            className="track__button track__button--pause"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
           />
-          <label
-            className="game__check"
-            htmlFor="answer-0"
+          <div
+            className="track__status"
           >
-            Отметить
-          </label>
+            <audio />
+          </div>
+          <div
+            className="game__answer"
+          >
+            <input
+              checked={false}
+              className="game__input visually-hidden"
+              id="answer-0"
+              name="answer"
+              onChange={[Function]}
+              type="checkbox"
+              value="answer-0"
+            />
+            <label
+              className="game__check"
+              htmlFor="answer-0"
+            >
+              Отметить
+            </label>
+          </div>
         </div>
       </div>
       <div
@@ -303,23 +352,38 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
           <audio />
         </div>
         <div
-          className="game__answer"
+          className="track"
         >
-          <input
-            checked={false}
-            className="game__input visually-hidden"
-            id="answer-1"
-            name="answer"
-            onChange={[Function]}
-            type="checkbox"
-            value="answer-1"
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
           />
-          <label
-            className="game__check"
-            htmlFor="answer-1"
+          <div
+            className="track__status"
           >
-            Отметить
-          </label>
+            <audio />
+          </div>
+          <div
+            className="game__answer"
+          >
+            <input
+              checked={false}
+              className="game__input visually-hidden"
+              id="answer-1"
+              name="answer"
+              onChange={[Function]}
+              type="checkbox"
+              value="answer-1"
+            />
+            <label
+              className="game__check"
+              htmlFor="answer-1"
+            >
+              Отметить
+            </label>
+          </div>
         </div>
       </div>
       <div
@@ -337,23 +401,38 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
           <audio />
         </div>
         <div
-          className="game__answer"
+          className="track"
         >
-          <input
-            checked={false}
-            className="game__input visually-hidden"
-            id="answer-2"
-            name="answer"
-            onChange={[Function]}
-            type="checkbox"
-            value="answer-2"
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
           />
-          <label
-            className="game__check"
-            htmlFor="answer-2"
+          <div
+            className="track__status"
           >
-            Отметить
-          </label>
+            <audio />
+          </div>
+          <div
+            className="game__answer"
+          >
+            <input
+              checked={false}
+              className="game__input visually-hidden"
+              id="answer-2"
+              name="answer"
+              onChange={[Function]}
+              type="checkbox"
+              value="answer-2"
+            />
+            <label
+              className="game__check"
+              htmlFor="answer-2"
+            >
+              Отметить
+            </label>
+          </div>
         </div>
       </div>
       <div
@@ -371,23 +450,38 @@ exports[`Render App Render GenreQuestionScreen 1`] = `
           <audio />
         </div>
         <div
-          className="game__answer"
+          className="track"
         >
-          <input
-            checked={false}
-            className="game__input visually-hidden"
-            id="answer-3"
-            name="answer"
-            onChange={[Function]}
-            type="checkbox"
-            value="answer-3"
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
           />
-          <label
-            className="game__check"
-            htmlFor="answer-3"
+          <div
+            className="track__status"
           >
-            Отметить
-          </label>
+            <audio />
+          </div>
+          <div
+            className="game__answer"
+          >
+            <input
+              checked={false}
+              className="game__input visually-hidden"
+              id="answer-3"
+              name="answer"
+              onChange={[Function]}
+              type="checkbox"
+              value="answer-3"
+            />
+            <label
+              className="game__check"
+              htmlFor="answer-3"
+            >
+              Отметить
+            </label>
+          </div>
         </div>
       </div>
       <button
@@ -452,5 +546,43 @@ exports[`Render App Render WelcomeScreen 1`] = `
   >
     Удачи!
   </p>
+</section>
+`;
+
+exports[`Render App Render WinScreen 1`] = `
+<section
+  className="result"
+>
+  <div
+    className="result__logo"
+  >
+    <img
+      alt="Угадай мелодию"
+      height="83"
+      src="img/melody-logo.png"
+      width="186"
+    />
+  </div>
+  <h2
+    className="result__title"
+  >
+    Вы настоящий меломан!
+  </h2>
+  <p
+    className="result__total"
+  >
+    Вы ответили правильно на
+    2
+     вопросов и совершили 
+    0
+     ошибки
+  </p>
+  <button
+    className="replay"
+    onClick={[Function]}
+    type="button"
+  >
+    Сыграть ещё раз
+  </button>
 </section>
 `;
