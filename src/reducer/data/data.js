@@ -32,6 +32,7 @@ const reducer = (state = initialState, action) => {
       return extend(state, {
         questions: action.payload,
       });
+
     default:
       return state;
   }
